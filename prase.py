@@ -586,8 +586,8 @@ class PandasShell(cmd.Cmd):
         print("                                                               各代码交易及持仓明细")
         print("======================================================================================================================================================")
 
-        print_table("持仓中 (Open Positions)", open_rows)
         print_table("已平仓 (Closed Positions)", closed_rows)
+        print_table("持仓中 (Open Positions)", open_rows)
         print(f'共 {len(rows)} 个代码\n')
 
         # 更新累计值用于总体总结
